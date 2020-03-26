@@ -1,6 +1,7 @@
 #!/bin/
 cd ~/apache-basic-playbook
 rm -rf roles
+rm -rf site.yml
 mkdir roles
 cd roles
 ansible-galaxy init apache-simple
@@ -76,5 +77,5 @@ cd ~/apache-basic-playbook/roles/apache-simple/templates/
 curl -O https://raw.githubusercontent.com/RedHatSE/JinjaTemplates/master/httpd.conf.j2
 curl -O https://raw.githubusercontent.com/RedHatSE/JinjaTemplates/master/index.html.j2
 rm -rf ~/apache-basic-playbook/templates/
-cd ~/apache-basic-playbook
-ansible-playbook -i ../hosts site.yml
+cd ~
+ansible-playbook -i hosts ~/apache-basic-playbook/site.yml
