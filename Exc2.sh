@@ -30,4 +30,4 @@ rabbitmq_cookie=cookiemonster
 rabbitmq_use_long_name=false
 
 EOF
-./setup.sh
+sudo ./setup.sh
