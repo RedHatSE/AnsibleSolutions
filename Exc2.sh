@@ -1,7 +1,7 @@
 !/bin/bash/
 cd /tmp
 rm -rf ansible*
-curl -O https://releases.ansible.com/ansible-tower/ansible-tower-setup-latest.tar.gz
+curl -O https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
 tar xvfz /tmp/ansible-tower-setup-latest.tar.gz
 cd /tmp/ansible-tower-setup-*/
 cat << EOF | tee inventory
